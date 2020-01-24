@@ -1,0 +1,13 @@
+Author: Sydney Taylor
+Description: A console-based client-server application that implements a 
+	simplified chat application using socket programming. The server 
+	starts the chat by writing user input to the socket so the client 
+	can read it. Then the client will write user input to the socket 
+	so that the server can read it. The chat continues with each one 
+	waiting for the other's response until the client quits.
+Compile: Server - gcc -o server server.c
+	 Client - gcc -o client client.c 
+Run: Server - ./server {port number}, ex. - ./server 12345
+     Client - ./client {host name} {port number}, ex. - ./client fawnlily.cs.uky.edu 12345
+Quit: Keyword to close the client connection is "quit"
+References: https://www.cs.rpi.edu/~moorthy/Courses/os98/Pgms/socket.html
